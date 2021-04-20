@@ -12,10 +12,12 @@ public class Index {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a search term: ");
         String search = input.next();
+
 //        String searchLC = search.toLowerCase();
 
-//        int index = aliceLC.indexOf(searchLC);
-//        int length = searchLC.length();
+        int index = alice.indexOf(search);
+        int length = search.length();
+        System.out.println("Your search term is at index " + index + " and is " + length + " characters long.");
         String[] parts = alice.split(search);
                 System.out.println(parts[0] + parts[1]);
 
